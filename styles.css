@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo a, header .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.video-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.video-section .main-video,
+.video-section .video-library {
+    width: 48%;
+}
+
+.video-library video {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.scrolling-section {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.scrolling-content {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.products-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.product ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product ul li {
+    margin-bottom: 5px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.faq-section {
+    margin-top: 20px;
+}
+
+.faq {
+    margin-bottom: 10px;
+}
+
+.faq h3 {
+    margin: 0;
+}
